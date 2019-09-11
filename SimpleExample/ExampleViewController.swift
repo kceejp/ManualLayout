@@ -51,10 +51,10 @@ internal final class ExampleViewController: UIViewController {
     yinView.bottom2 = bottom
   }
 
-  fileprivate func generateTextStyle(smaller: Bool = false) -> [String: AnyObject] {
+  fileprivate func generateTextStyle(smaller: Bool = false) -> [NSAttributedString.Key: AnyObject] {
     return [
-      NSFontAttributeName: UIFont.systemFont(ofSize: smaller ? 14 : 18),
-      NSForegroundColorAttributeName: UIColor.black
+        NSAttributedString.Key.font: UIFont.systemFont(ofSize: smaller ? 14 : 18),
+        NSAttributedString.Key.foregroundColor: UIColor.black
     ]
   }
 }
